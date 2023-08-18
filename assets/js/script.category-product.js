@@ -2,9 +2,9 @@
 //cada produto é pertencente a uma categoria
 
 class Category{
-    constructor(param1, param2) {
-        this.id = param1;
-        this.name = param2;
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
         this.products = [];
     }
 }
@@ -36,5 +36,9 @@ class CategoryService {
 const categoriesList = new CategoryService();
 
 function createCategory() {
-    
+    const categoryName = "Candies";
+
+    categoriesList.addCategory(categoryName);
+
+    console.log(categoriesList.categories);
 }
