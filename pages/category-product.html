@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias & Produto</title>
     <script src="../assets/js/script.category-product.js"></script>
+    <link rel="stylesheet" href="../layouts/styles.category-product.css">
 </head>
 <body>
-    <button onclick="createCategory()">Criar Categoria</button>
-    <button onclick="createProduct()">Criar Produto</button>
-    <button onclick="findCategory(1)">Encontrar categoria</button>
-    <button onclick="editCategory(1, 'Doces')">Atualizar Categoria</button>
-    <button onclick="deleteCategory(2)">Deletar Categoria</button>
+   <div class="container">
+    <h1>🛍Categorias & Produtos</h1>
+
+    <div class="form-container">
+        <h2>📁Criar Categoria</h2>
+        <label for="">Nome da Categoria</label>
+        <input type="text" required>
+        <button>Criar Categoria</button>
+    </div>
+   </div>
 </body>
 </html>
