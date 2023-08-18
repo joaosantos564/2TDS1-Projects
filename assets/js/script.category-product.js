@@ -73,6 +73,10 @@ class ProductService {
 
     }
 
+    getProductById(id) {
+        return this.products.find((product) => product.id ==id);
+    }
+
     
 }
 
