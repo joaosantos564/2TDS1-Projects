@@ -43,6 +43,14 @@ class CategoryService {
         const category = this.getCategoryById(id);
         category.name = name;
      }
+
+     //D=> Delete
+     deleteCategory(id) {
+        const category = this.getCategoryById(id);
+        const index = this.categories.indexOf(category);
+
+        this.categories.splice(index, 1);
+     }
 }
 
 
@@ -102,6 +110,12 @@ function findCategory(id){
 
 function editCategory(id, name) {
     categoriesList.upadateCategory(id, name);
+
+    console.log(categoriesList.categories);
+}
+
+function deleteCategory(id){
+    categoriesList.deleteCategory(id);
 
     console.log(categoriesList.categories);
 }
